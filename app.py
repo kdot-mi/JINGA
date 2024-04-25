@@ -25,4 +25,9 @@ async def on_message(message):
         # Send the new message
         await message.channel.send(f'**From:** {message.author.mention} {new_content}')
 
-bot.run('MTIzMjk0ODUxODE0NzMzMDA0OA.GXhOAv.rrqQezkmY1yMjIAp_zpJYeQ5DQbabVT7dsFNec')
+# Open the file and read the token
+with open('DISCORD_TOKEN.txt', 'r') as file:
+    DISCORD_TOKEN = file.read().strip()
+
+# Use the token
+bot.run(DISCORD_TOKEN)
