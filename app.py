@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import re
+import os
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='!', intents=intents)
@@ -26,7 +27,7 @@ async def on_message(message):
         await message.channel.send(f'**From:** {message.author.mention} {new_content}')
 
 # Open the file and read the token
-with open('DISCORD_TOKEN.txt', 'r') as file:
+with open('JINGA\DISCORD_TOKEN.txt', 'r') as file:
     DISCORD_TOKEN = file.read().strip()
 
 # Use the token
