@@ -1,3 +1,3 @@
-pip install discord
+<code>pip install discord</code>
 
-create a file named DISCORD_TOKEN
+Create a file named **DISCORD_TOKEN**
